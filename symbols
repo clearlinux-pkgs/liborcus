@@ -127,6 +127,15 @@ liborcus-0.13.so.0:_ZN5orcus13orcus_xls_xmlD0Ev
 liborcus-0.13.so.0:_ZN5orcus13orcus_xls_xmlD1Ev
 liborcus-0.13.so.0:_ZN5orcus13orcus_xls_xmlD2Ev
 liborcus-0.13.so.0:_ZN5orcus14css_selector_t5clearEv
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumeric11read_streamEPKcm
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumeric16read_content_xmlEPKcm
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumeric6detectEPKhm
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumeric9read_fileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumericC1EPNS_11spreadsheet5iface14import_factoryE
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumericC2EPNS_11spreadsheet5iface14import_factoryE
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumericD0Ev
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumericD1Ev
+liborcus-0.13.so.0:_ZN5orcus14orcus_gnumericD2Ev
 liborcus-0.13.so.0:_ZN5orcus17css_document_tree15insertion_errorC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 liborcus-0.13.so.0:_ZN5orcus17css_document_tree15insertion_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 liborcus-0.13.so.0:_ZN5orcus17css_document_tree17insert_propertiesERKNS_14css_selector_tEtRKSt13unordered_mapINS_7pstringESt6vectorINS_20css_property_value_tESaIS7_EENS5_4hashESt8equal_toIS5_ESaISt4pairIKS5_S9_EEE
@@ -382,6 +391,7 @@ liborcus-0.13.so.0:_ZN5orcuslsERSoRKNS_21css_simple_selector_tE
 liborcus-0.13.so.0:_ZNK5orcus10orcus_xlsx8get_nameEv
 liborcus-0.13.so.0:_ZNK5orcus13orcus_xls_xml8get_nameEv
 liborcus-0.13.so.0:_ZNK5orcus14css_selector_teqERKS0_
+liborcus-0.13.so.0:_ZNK5orcus14orcus_gnumeric8get_nameEv
 liborcus-0.13.so.0:_ZNK5orcus17css_document_tree14get_propertiesERKNS_14css_selector_tEt
 liborcus-0.13.so.0:_ZNK5orcus17css_document_tree18get_all_propertiesERKNS_14css_selector_tE
 liborcus-0.13.so.0:_ZNK5orcus17css_document_tree4dumpEv

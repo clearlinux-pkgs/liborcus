@@ -1,1 +1,1 @@
---without-gnumeric-filter --disable-spreadsheet-model
+--with-gnumeric-filter --disable-spreadsheet-model

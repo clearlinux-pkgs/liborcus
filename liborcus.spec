@@ -4,7 +4,7 @@
 #
 Name     : liborcus
 Version  : 0.13.4
-Release  : 1
+Release  : 2
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.13.4.tar.gz
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.13.4.tar.gz
 Summary  : Standalone file import filter library for spreadsheet documents.
@@ -88,8 +88,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534615855
-%configure --disable-static --without-gnumeric-filter --disable-spreadsheet-model
+export SOURCE_DATE_EPOCH=1534655095
+%configure --disable-static --with-gnumeric-filter --disable-spreadsheet-model
 make  %{?_smp_mflags}
 
 %check
@@ -100,7 +100,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1534615855
+export SOURCE_DATE_EPOCH=1534655095
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/liborcus
 cp LICENSE %{buildroot}/usr/share/doc/liborcus/LICENSE
@@ -148,6 +148,7 @@ cp LICENSE %{buildroot}/usr/share/doc/liborcus/LICENSE
 /usr/include/liborcus-0.13/orcus/measurement.hpp
 /usr/include/liborcus-0.13/orcus/mso/encryption_info.hpp
 /usr/include/liborcus-0.13/orcus/orcus_csv.hpp
+/usr/include/liborcus-0.13/orcus/orcus_gnumeric.hpp
 /usr/include/liborcus-0.13/orcus/orcus_import_ods.hpp
 /usr/include/liborcus-0.13/orcus/orcus_import_xlsx.hpp
 /usr/include/liborcus-0.13/orcus/orcus_ods.hpp
