@@ -4,10 +4,10 @@
 #
 Name     : liborcus
 Version  : 0.15.3
-Release  : 12
+Release  : 13
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
-Summary  : Standalone file import filter library for spreadsheet documents.
+Summary  : File import filter library for spreadsheet documents.
 Group    : Development/Tools
 License  : MPL-2.0-no-copyleft-exception
 Requires: liborcus-bin = %{version}-%{release}
@@ -40,6 +40,7 @@ Group: Development
 Requires: liborcus-lib = %{version}-%{release}
 Requires: liborcus-bin = %{version}-%{release}
 Provides: liborcus-devel = %{version}-%{release}
+Requires: liborcus = %{version}-%{release}
 Requires: liborcus = %{version}-%{release}
 
 %description dev
@@ -90,7 +91,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580324454
+export SOURCE_DATE_EPOCH=1583167684
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -107,7 +109,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1580324454
+export SOURCE_DATE_EPOCH=1583167684
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/liborcus
 cp %{_builddir}/liborcus-0.15.3/LICENSE %{buildroot}/usr/share/package-licenses/liborcus/d22157abc0fc0b4ae96380c09528e23cf77290a9
