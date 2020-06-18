@@ -4,12 +4,12 @@
 #
 Name     : liborcus
 Version  : 0.15.3
-Release  : 14
+Release  : 15
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
-Summary  : File import filter library for spreadsheet documents.
+Summary  : Standalone file import filter library for spreadsheet documents.
 Group    : Development/Tools
-License  : MPL-2.0-no-copyleft-exception
+License  : MIT MPL-2.0-no-copyleft-exception
 Requires: liborcus-bin = %{version}-%{release}
 Requires: liborcus-lib = %{version}-%{release}
 Requires: liborcus-license = %{version}-%{release}
@@ -40,7 +40,6 @@ Group: Development
 Requires: liborcus-lib = %{version}-%{release}
 Requires: liborcus-bin = %{version}-%{release}
 Provides: liborcus-devel = %{version}-%{release}
-Requires: liborcus = %{version}-%{release}
 Requires: liborcus = %{version}-%{release}
 
 %description dev
@@ -91,12 +90,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583167684
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1592454882
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static --with-gnumeric-filter --disable-spreadsheet-model
 make  %{?_smp_mflags}
@@ -109,10 +107,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1583167684
+export SOURCE_DATE_EPOCH=1592454882
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/liborcus
 cp %{_builddir}/liborcus-0.15.3/LICENSE %{buildroot}/usr/share/package-licenses/liborcus/d22157abc0fc0b4ae96380c09528e23cf77290a9
+cp %{_builddir}/liborcus-0.15.3/test/json/validation/LICENSE %{buildroot}/usr/share/package-licenses/liborcus/8cdf65935c756d59ad0912cf700d908b37f739d9
 %make_install
 
 %files
@@ -208,6 +207,7 @@ cp %{_builddir}/liborcus-0.15.3/LICENSE %{buildroot}/usr/share/package-licenses/
 
 %files license
 %defattr(0644,root,root,0755)
+/usr/share/package-licenses/liborcus/8cdf65935c756d59ad0912cf700d908b37f739d9
 /usr/share/package-licenses/liborcus/d22157abc0fc0b4ae96380c09528e23cf77290a9
 
 %files python
