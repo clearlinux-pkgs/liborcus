@@ -4,7 +4,7 @@
 #
 Name     : liborcus
 Version  : 0.15.3
-Release  : 18
+Release  : 19
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.15.3.tar.gz
 Summary  : Standalone file import filter library for spreadsheet documents.
