@@ -4,7 +4,7 @@
 #
 Name     : liborcus
 Version  : 0.16.1
-Release  : 23
+Release  : 24
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.16.1.tar.bz2
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.16.1.tar.bz2
 Summary  : Standalone file import filter library for spreadsheet documents.
@@ -16,6 +16,7 @@ Requires: liborcus-license = %{version}-%{release}
 Requires: liborcus-python = %{version}-%{release}
 Requires: liborcus-python3 = %{version}-%{release}
 BuildRequires : boost-dev
+BuildRequires : compat-gcc-10-dev
 BuildRequires : ixion-dev
 BuildRequires : pkgconfig(mdds-1.5)
 BuildRequires : pkgconfig(python3)
@@ -86,17 +87,22 @@ python3 components for the liborcus package.
 cd %{_builddir}/liborcus-0.16.1
 
 %build
+## build_prepend content
+export CC=gcc-10
+export CXX=g++-10
+## build_prepend end
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1613154615
+export SOURCE_DATE_EPOCH=1622049522
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
 export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
-%configure --disable-static --with-gnumeric-filter --disable-spreadsheet-model
+%configure --disable-static --with-gnumeric-filter \
+--disable-spreadsheet-model
 make  %{?_smp_mflags}
 
 %check
@@ -107,7 +113,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1613154615
+export SOURCE_DATE_EPOCH=1622049522
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/liborcus
 cp %{_builddir}/liborcus-0.16.1/LICENSE %{buildroot}/usr/share/package-licenses/liborcus/d22157abc0fc0b4ae96380c09528e23cf77290a9
