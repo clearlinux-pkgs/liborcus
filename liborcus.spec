@@ -4,7 +4,7 @@
 #
 Name     : liborcus
 Version  : 0.16.1
-Release  : 29
+Release  : 30
 URL      : https://dev-www.libreoffice.org/src/liborcus-0.16.1.tar.bz2
 Source0  : https://dev-www.libreoffice.org/src/liborcus-0.16.1.tar.bz2
 Summary  : Standalone file import filter library for spreadsheet documents.
@@ -95,7 +95,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622049522
+export SOURCE_DATE_EPOCH=1635748827
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -113,7 +113,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1622049522
+export SOURCE_DATE_EPOCH=1635748827
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/liborcus
 cp %{_builddir}/liborcus-0.16.1/LICENSE %{buildroot}/usr/share/package-licenses/liborcus/d22157abc0fc0b4ae96380c09528e23cf77290a9
