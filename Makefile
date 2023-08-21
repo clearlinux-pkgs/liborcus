@@ -1,5 +1,5 @@
 PKG_NAME := liborcus
-URL = https://dev-www.libreoffice.org/src/liborcus-0.17.2.tar.bz2
+URL = https://dev-www.libreoffice.org/src/liborcus-0.18.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common

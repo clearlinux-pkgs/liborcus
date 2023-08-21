@@ -1,6 +1,4 @@
+Configure miss: Valgrind tool sgcheck
 Configure miss: _Bool
-Configure miss: gcc-10 option to accept ISO C89
-Configure miss: if g++-10 static flag -static works
-Configure miss: if gcc-10 static flag -static works
-Configure miss: if gcc-10 supports -fno-rtti -fno-exceptions
-Configure miss: stdbool.h that conforms to C99
+Configure miss: g++ option to enable C++11 features
+Configure miss: if g++ -std=c++17 static flag -static works
