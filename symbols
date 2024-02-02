@@ -179,6 +179,7 @@ liborcus-0.18.so.0:_ZN5orcus11yaml_configC1Ev
 liborcus-0.18.so.0:_ZN5orcus11yaml_configC2Ev
 liborcus-0.18.so.0:_ZN5orcus11yaml_configD1Ev
 liborcus-0.18.so.0:_ZN5orcus11yaml_configD2Ev
+liborcus-0.18.so.0:_ZN5orcus13create_filterENS_8format_tEPNS_11spreadsheet5iface14import_factoryE
 liborcus-0.18.so.0:_ZN5orcus13orcus_xls_xml11read_streamESt17basic_string_viewIcSt11char_traitsIcEE
 liborcus-0.18.so.0:_ZN5orcus13orcus_xls_xml6detectEPKhm
 liborcus-0.18.so.0:_ZN5orcus13orcus_xls_xml9read_fileESt17basic_string_viewIcSt11char_traitsIcEE
@@ -279,11 +280,11 @@ liborcus-0.18.so.0:_ZN5orcus3dom11entity_nameC1Ev
 liborcus-0.18.so.0:_ZN5orcus3dom11entity_nameC2EPKcSt17basic_string_viewIcSt11char_traitsIcEE
 liborcus-0.18.so.0:_ZN5orcus3dom11entity_nameC2ESt17basic_string_viewIcSt11char_traitsIcEE
 liborcus-0.18.so.0:_ZN5orcus3dom11entity_nameC2Ev
-liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl10charactersERKNS_7pstringEb
+liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl10charactersESt17basic_string_viewIcSt11char_traitsIcEEb
 liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl11end_elementERKNS_21sax_ns_parser_elementE
-liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl13set_attributeEPKcRKNS_7pstringES7_
+liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl13set_attributeEPKcSt17basic_string_viewIcSt11char_traitsIcEES8_
 liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl13start_elementERKNS_21sax_ns_parser_elementE
-liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl15end_declarationERKNS_7pstringE
+liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl15end_declarationESt17basic_string_viewIcSt11char_traitsIcEE
 liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4impl7doctypeERKNS_3sax19doctype_declarationE
 liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4loadESt17basic_string_viewIcSt11char_traitsIcEE
 liborcus-0.18.so.0:_ZN5orcus3dom13document_tree4swapERS1_
@@ -985,9 +986,6 @@ liborcus-parser-0.18.so.0:_ZN5orcus6tokensC1EPPKcm
 liborcus-parser-0.18.so.0:_ZN5orcus6tokensC2EPPKcm
 liborcus-parser-0.18.so.0:_ZN5orcus6tokensD1Ev
 liborcus-parser-0.18.so.0:_ZN5orcus6tokensD2Ev
-liborcus-parser-0.18.so.0:_ZN5orcus7pstring6resizeEm
-liborcus-parser-0.18.so.0:_ZN5orcus7pstringC1EPKc
-liborcus-parser-0.18.so.0:_ZN5orcus7pstringC2EPKc
 liborcus-parser-0.18.so.0:_ZN5orcus8is_alphaEc
 liborcus-parser-0.18.so.0:_ZN5orcus8is_blankEc
 liborcus-parser-0.18.so.0:_ZN5orcus8length_tC1ENS_13length_unit_tEd
@@ -1006,8 +1004,6 @@ liborcus-parser-0.18.so.0:_ZN5orcuslsERSoNS_8format_tE
 liborcus-parser-0.18.so.0:_ZN5orcuslsERSoRKNS_11date_time_tE
 liborcus-parser-0.18.so.0:_ZN5orcuslsERSoRKNS_21zip_file_entry_headerE
 liborcus-parser-0.18.so.0:_ZN5orcuslsERSoRKNS_8length_tE
-liborcus-parser-0.18.so.0:_ZN5orcuspLERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_7pstringE
-liborcus-parser-0.18.so.0:_ZN5orcusplERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_7pstringE
 liborcus-parser-0.18.so.0:_ZNK5orcus10xml_name_t9to_stringB5cxx11ERKNS_13xmlns_contextENS0_14to_string_typeE
 liborcus-parser-0.18.so.0:_ZNK5orcus10xml_name_t9to_stringB5cxx11ERKNS_16xmlns_repositoryE
 liborcus-parser-0.18.so.0:_ZNK5orcus10xml_name_teqERKS0_
@@ -1086,12 +1082,6 @@ liborcus-parser-0.18.so.0:_ZNK5orcus4yaml11parser_base9get_scopeEv
 liborcus-parser-0.18.so.0:_ZNK5orcus6tokens14get_token_nameEm
 liborcus-parser-0.18.so.0:_ZNK5orcus6tokens14is_valid_tokenEm
 liborcus-parser-0.18.so.0:_ZNK5orcus6tokens9get_tokenESt17basic_string_viewIcSt11char_traitsIcEE
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstring4hashclERKS0_
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstring4trimEv
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstringeqEPKc
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstringeqERKS0_
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstringeqESt17basic_string_viewIcSt11char_traitsIcEE
-liborcus-parser-0.18.so.0:_ZNK5orcus7pstringltERKS0_
 liborcus-parser-0.18.so.0:_ZNK5orcus8length_t9to_stringB5cxx11Ev
 liborcus-parser-0.18.so.0:_ZNK5orcus8length_teqERKS0_
 liborcus-parser-0.18.so.0:_ZNK5orcus8length_tneERKS0_
