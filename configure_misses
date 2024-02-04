@@ -1,4 +1,21 @@
+Configure miss: /usr/bin/gcc-14 option to enable C11 features
+Configure miss: Valgrind tool sgcheck
+Configure miss: Valgrind tool sgcheck
 Configure miss: Valgrind tool sgcheck
 Configure miss: _Bool
+Configure miss: _Bool
+Configure miss: _Bool
 Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
+Configure miss: if /usr/bin/gcc-14 static flag -static works
+Configure miss: if /usr/bin/gcc-14 supports -fno-rtti -fno-exceptions
 Configure miss: if g++ -std=c++17 static flag -static works
+Configure miss: if g++ -std=c++17 static flag -static works
+Configure miss: if g++ -std=c++17 static flag -static works
+Configure miss: working strtod
+Configure miss: x86_64-clr-linux-gnu-dlltool
+Configure miss: x86_64-clr-linux-gnu-mt
+Configure miss: x86_64-clr-linux-gnu-objdump
+Configure miss: x86_64-clr-linux-gnu-pkg-config
+Configure miss: x86_64-clr-linux-gnu-strip
